@@ -83,18 +83,6 @@ px.line(rec_academy,x='date',y='pages_per_session')
 
 # now we have to find bounce Rate, a measure of the percentage of visitors who come to the site and never interact with the website and leave.
 
-def bounce_rate(dataframe):
-    '''
-    Calculates the bounce rate for visitors on the website.
-    input: dataframe with bounced_sessions and sessions columns
-    output: numeric value from bounce rate
-    '''
-    # WRITE YOUR CODE BELOW
-    # Remember, the input for the function is called `dataframe`
-    # So all calculations should reference that variable.
-
-
-
     sum_bounced = dataframe['bounced_sessions'].sum()
     sum_sessions = dataframe['sessions'].sum()
     rate = (sum_bounced / sum_sessions) * 100
